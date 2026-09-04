@@ -1,0 +1,33 @@
+{
+    "name": "emad/numverify-lookup",
+    "description": "التحقق من أرقام الهاتف بطبقة محلية مجانية أولاً، ثم Numverify للبيانات التي تستحق طلباً",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "giggsey/libphonenumber-for-php": "^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "suggest": {
+        "giggsey/libphonenumber-for-php": "تحقق محلي أدق يغطي نطاقات المشغّلين لكل دولة (يُستخدم تلقائياً إن وُجد)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Numverify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Numverify\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "serve": "php -S localhost:8000 -t public"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
