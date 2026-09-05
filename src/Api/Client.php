@@ -222,7 +222,9 @@ final class Client
 
         $body = curl_exec($handle);
         $error = curl_error($handle);
-        // curl_close($handle);
+
+        // لا حاجة لـ curl_close(): المقبض كائن CurlHandle منذ PHP 8.0
+        // ويُحرَّر تلقائياً، والدالة صارت مهملة في PHP 8.5.
 
         if ($body === false) {
             throw new ApiException($error !== '' ? $error : 'فشل الاتصال', 'network_error');

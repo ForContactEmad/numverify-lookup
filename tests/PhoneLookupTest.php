@@ -16,7 +16,7 @@ final class PhoneLookupTest extends TestCase
 {
     private int $apiCalls = 0;
 
-    private function api(array $payload = null): Client
+    private function api(?array $payload = null): Client
     {
         $payload ??= [
             'valid' => true,
