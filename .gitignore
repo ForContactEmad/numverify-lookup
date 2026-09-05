@@ -2,3 +2,6 @@
 /vendor/
 storage/cache/*.json
 .phpunit.result.cache
+phpunit.phar
+phpunit.phar
+phpunit.phar

@@ -1,8 +1,10 @@
 # Numverify Lookup
 
-[![tests](https://github.com/USERNAME/numverify-lookup/actions/workflows/tests.yml/badge.svg)](https://github.com/USERNAME/numverify-lookup/actions/workflows/tests.yml)
+[![tests](https://github.com/ForContactEmad/numverify-lookup/actions/workflows/tests.yml/badge.svg)](https://github.com/ForContactEmad/numverify-lookup/actions/workflows/tests.yml)
 [![PHP](https://img.shields.io/badge/php-8.1%2B-777bb4)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+![واجهة المشروع](docs/screenshot.png)
 
 التحقق من أرقام الهاتف الدولية بطبقتين: تحقق محلي مجاني يستبعد المستحيل،
 ثم استعلام خارجي عن المشغّل والموقع للأرقام التي تستحقه وحدها.
